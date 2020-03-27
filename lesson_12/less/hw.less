@@ -1,0 +1,81 @@
+@import "_variables";
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: @font-family;
+}
+section {
+  padding: 4rem 0 8rem;
+}
+.section-title {
+  margin-bottom: 6rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: @font-family;
+  font-size: 3rem;
+  color: @color;
+  .upper-icon-wrapper() {
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 0.1rem;
+    margin-bottom: 15px;
+    background-color: @wrapper-background-color;
+  }
+  .upper-icon-wrapper::before {
+    .upper-icon-wrapper;
+  }
+  .upper-icon-wrapper::after {
+    .upper-icon-wrapper;
+  }
+  .upper-icon-wrapper .upper-icon {
+    margin-bottom: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+.feedback-form-input() {
+  color: @feedback-form-input-color;
+  font-size: @feedback-form-input-font-size;
+}
+.placeholder() {
+  &::-webkit-input-placeholder {
+    .feedback-form-input;
+  }
+  &::-moz-placeholder {
+    .feedback-form-input;
+  }
+  &:-moz-placeholder {
+    .feedback-form-input;
+  }
+  &:-ms-input-placeholder {
+    .feedback-form-input;
+  }
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+.feedback-form-input {
+  .placeholder();
+}
+.feedback-form {
+  .title-feedback {
+    display: block;
+  }
+  .description-feedback {
+    display: block;
+  }
+}
+.feedback-form {
+  .input-user {
+    background: url("@{feedback-form-path}/person-@{feedback-form-background}.svg");
+    background-size: @feedback-form-background-size;
+  }
+  .input-phone {
+    background: url("@{feedback-form-path}/telephone-@{feedback-form-background}.svg");
+    background-size: @feedback-form-background-size;
+  }
+}

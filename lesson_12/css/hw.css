@@ -1,0 +1,72 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'museo_reg', sans-serif;
+}
+section {
+  padding: 4rem 0 8rem;
+}
+.section-title {
+  margin-bottom: 6rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'museo_reg', sans-serif;
+  font-size: 3rem;
+  color: #1b1b1b;
+}
+.section-title .upper-icon-wrapper::before {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 0.1rem;
+  margin-bottom: 15px;
+  background-color: #5ba2a9;
+}
+.section-title .upper-icon-wrapper::after {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 0.1rem;
+  margin-bottom: 15px;
+  background-color: #5ba2a9;
+}
+.section-title .upper-icon-wrapper .upper-icon {
+  margin-bottom: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+.feedback-form-input::-webkit-input-placeholder {
+  color: #515151;
+  font-size: 1.5rem;
+}
+.feedback-form-input::-moz-placeholder {
+  color: #515151;
+  font-size: 1.5rem;
+}
+.feedback-form-input:-moz-placeholder {
+  color: #515151;
+  font-size: 1.5rem;
+}
+.feedback-form-input:-ms-input-placeholder {
+  color: #515151;
+  font-size: 1.5rem;
+}
+.feedback-form-input:hover,
+.feedback-form-input:focus {
+  opacity: 1;
+}
+.feedback-form .title-feedback {
+  display: block;
+}
+.feedback-form .description-feedback {
+  display: block;
+}
+.feedback-form .input-user {
+  background: url("../img/shared/feedback/person-icon.svg");
+  background-size: 2rem;
+}
+.feedback-form .input-phone {
+  background: url("../img/shared/feedback/telephone-icon.svg");
+  background-size: 2rem;
+}
